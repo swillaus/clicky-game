@@ -1,0 +1,16 @@
+#scores  {
+    float: right;
+    margin-left: 300px;
+}
+
+#header  {
+    float: right;
+    margin-left: 300px;
+    text-align: center;
+
+}
+
+.navbar {
+    background-color: orange;
+
+}

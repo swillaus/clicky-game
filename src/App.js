@@ -62,19 +62,6 @@ class App extends React.Component {
     const { cards, currentScore, highScore } = this.state;
 
 
-    // const print = text => console.log(text);
-    // const sayHello = (text, func) => func(text);
-    // sayHello("Programming is FUN!", print);
-
-
-    // var data = {
-    //   name: "Ben",
-    //   job: "tutor",
-    //   age: 30
-    // }
-    // console.log({ ...data, age: 31 })
-
-
     return (
       <div className="App">
         <Navbar />
