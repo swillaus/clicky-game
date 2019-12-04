@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import ImageCard from "./components/ImageCard/index";
-import initData from '..//public/data.json'
+import initData from './data.json'
 // import initData from '../../'
 
 class App extends React.Component {
