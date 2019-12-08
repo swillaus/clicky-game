@@ -2,8 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import ImageCard from "./components/ImageCard/index";
-import initData from './data.json'
-// import initData from '../../'
+import initData from './card_data.json'
+// import initData from '../public/data.json'
 
 class App extends React.Component {
   state = {
@@ -68,9 +68,11 @@ class App extends React.Component {
         <Navbar />
         current: {currentScore}, highscore: {highScore}
         <Jumbotron />
+        <div className="cards">
         {
           cards.map((card, i) => <ImageCard key={i + '_card_set_1'} card={card} handleClick={this.handleClick} />)
         }
+        </div>
       </div>
     );
   }

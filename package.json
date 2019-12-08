@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://swillaus.github.io/clicky-game/",
   "dependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0"

@@ -1,15 +1,15 @@
 import React from "react";
 import "./style.css";
 
-function Navbar({ card, handleClick }) {
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#" >
+      <a className="navbar-brand" href="/" >
         Clicky Game
       </a>
 
       <div id="header">
-        <p> Click images to score points </p>
+        <h3> Click images to score points </h3>
       </div>
 
 

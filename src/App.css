@@ -33,3 +33,24 @@
   z-index: 99;
   white-space: nowrap;
 }
+
+.cards {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+}
+
+
+p {
+  /* background: #000c50; */
+  min-height: 30px;
+  position: fixed;
+  width: 100%;
+  color: #000c50;
+  font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+  z-index: 99;
+  white-space: nowrap;
+  text-decoration: none;
+  /* color: #fff; */
+  font-weight: 300;  
+}

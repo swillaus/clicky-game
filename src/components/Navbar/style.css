@@ -1,16 +1,38 @@
-#scores  {
+.navbar {
+    background: #000c50;
+    min-height: 30px;
+    position: relative;
+    width: 100%;
+    color: #000c50;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    z-index: 99;
+    white-space: nowrap;
+    text-decoration: none;
+    /* color: #fff; */
+    font-weight: 900;
+}
+
+#scores {
     float: right;
     margin-left: 300px;
 }
 
-#header  {
+#header {
     float: right;
     margin-left: 300px;
     text-align: center;
-
 }
 
-.navbar {
-    background-color: orange;
-
+.navbar a {
+  /* background: #000c50; */
+  min-height: 30px;
+  position: relative;
+  width: 100%;
+  color: #000c50;
+  font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+  z-index: 99;
+  white-space: nowrap;
+  text-decoration: none;
+  /* color: #fff; */
+  font-weight: 300;  
 }
