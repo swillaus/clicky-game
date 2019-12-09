@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar/Navbar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import ImageCard from "./components/ImageCard/index";
 import initData from './card_data.json'
-// import initData from '../public/data.json'
 
 class App extends React.Component {
   state = {
@@ -17,6 +16,13 @@ class App extends React.Component {
   }
 
   shuffleCards = data => {
+    if(typeof data !== "object"){
+      console.warn("Please pass an array to shuffleCards function!");
+      return [];
+    }
+    if(data.length === 0){
+      console.warn("Please pass an array to shuffleCards with content!")
+    }
 
     for (let i = 0; i < data.length; i++) {
       let randomIndex = Math.floor(Math.random() * data.length);
@@ -65,8 +71,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <Navbar />
-        current: {currentScore}, highscore: {highScore}
+        <Navbar currentScore={currentScore} highScore={highScore}/>
         <Jumbotron />
         <div className="cards">
         {

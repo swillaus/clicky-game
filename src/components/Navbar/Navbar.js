@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
+import css from './styles';
 
-function Navbar() {
+function Navbar({currentScore, highScore}) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/" >
@@ -14,8 +15,8 @@ function Navbar() {
 
 
       <div id="scores">
-        <p> Current Score: </p> 
-        <p> High Score: </p>
+        <p style={css.para}> Current Score: {currentScore} </p> 
+        <p> High Score: {highScore}</p>
       </div>
     </nav>
   );
